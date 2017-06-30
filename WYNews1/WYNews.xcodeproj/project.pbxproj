@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		291BD9901F05EE9400202AEB /* MainChilVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291BD98F1F05EE9400202AEB /* MainChilVC.swift */; };
 		29445AD91F04D5B20009B908 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29445AD81F04D5B20009B908 /* AppDelegate.swift */; };
 		29445ADB1F04D5B20009B908 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29445ADA1F04D5B20009B908 /* ViewController.swift */; };
 		29445ADE1F04D5B20009B908 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29445ADC1F04D5B20009B908 /* Main.storyboard */; };
@@ -52,7 +51,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		291BD98F1F05EE9400202AEB /* MainChilVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainChilVC.swift; sourceTree = "<group>"; };
 		29445AD51F04D5B10009B908 /* WYNews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WYNews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		29445AD81F04D5B20009B908 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		29445ADA1F04D5B20009B908 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -136,7 +134,6 @@
 				29445AD81F04D5B20009B908 /* AppDelegate.swift */,
 				29445ADA1F04D5B20009B908 /* ViewController.swift */,
 				29445B241F04DD140009B908 /* MainViewController.swift */,
-				291BD98F1F05EE9400202AEB /* MainChilVC.swift */,
 				29445B251F04DD140009B908 /* MainViewController.xib */,
 				29445B061F04D7880009B908 /* TitleButton.swift */,
 				29445B081F04D9C00009B908 /* NewsViewController.swift */,
@@ -326,7 +323,6 @@
 				29445ADB1F04D5B20009B908 /* ViewController.swift in Sources */,
 				29445B071F04D7880009B908 /* TitleButton.swift in Sources */,
 				29445AD91F04D5B20009B908 /* AppDelegate.swift in Sources */,
-				291BD9901F05EE9400202AEB /* MainChilVC.swift in Sources */,
 				29445B1E1F04DA0D0009B908 /* HotViewController.swift in Sources */,
 				29445B0E1F04D9CF0009B908 /* VideoViewController.swift in Sources */,
 				29445B0A1F04D9C00009B908 /* NewsViewController.swift in Sources */,

@@ -24,7 +24,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.makeKeyAndVisible()
         
         
-        self.window?.rootViewController = MainChilVC()
+        self.window?.rootViewController = MainViewController()
         
         
         

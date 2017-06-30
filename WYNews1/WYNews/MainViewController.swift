@@ -10,8 +10,8 @@ import UIKit
 
 class MainViewController: UIViewController {
 
-    var titileScrollView: UIScrollView!
-    var contentView: UIScrollView!
+    @IBOutlet weak var titileScrollView: UIScrollView!
+    @IBOutlet weak var contentView: UIScrollView!
     
     
   
@@ -26,15 +26,12 @@ class MainViewController: UIViewController {
         super.viewDidLoad()
         automaticallyAdjustsScrollViewInsets = false
         
-        
-        
+        setUpChildViewController()
+        setUpTitle()
         setUpScrollView()
         
-       setUpChildViewController()
         
-        
-        
-      setUpTitle()
+
         // Do any additional setup after loading the view.
     }
 
@@ -67,35 +64,33 @@ extension MainViewController{
 
     func setUpChildViewController()  {
         
-//        let topLineVC = TopLineViewController()
-//        topLineVC.title = "头条"
-//        self.addChildViewController(topLineVC)
-//        
-//        
-//        let hotVC = HotViewController()
-//        hotVC.title = "热点"
-//        self.addChildViewController(hotVC)
-//        
-//        
-//        let videoVC = VideoViewController()
-//        videoVC.title = "视频"
-//        self.addChildViewController(videoVC)
-//        
-//        
-//        let societyVC = SocietyViewController()
-//        societyVC.title = "社会"
-//        self.addChildViewController(societyVC)
-//        
-//        let readerVC = ReaderViewController()
-//        readerVC.title = "订阅"
-//        self.addChildViewController(readerVC)
-//        
-//        
-//        let scienceVC = ScienceViewController()
-//        scienceVC.title = "科技"
-//        self.addChildViewController(societyVC)
-//        
-//         contentView.contentSize = CGSize(width: CGFloat(self.childViewControllers.count) * CGFloat(UIScreen.main.bounds.width), height: 0)
+        let topLineVC = TopLineViewController()
+        topLineVC.title = "头条"
+        self.addChildViewController(topLineVC)
+        
+        
+        let hotVC = HotViewController()
+        hotVC.title = "热点"
+        self.addChildViewController(hotVC)
+        
+        
+        let videoVC = VideoViewController()
+        videoVC.title = "视频"
+        self.addChildViewController(videoVC)
+        
+        
+        let societyVC = SocietyViewController()
+        societyVC.title = "社会"
+        self.addChildViewController(societyVC)
+        
+        let readerVC = ReaderViewController()
+        readerVC.title = "订阅"
+        self.addChildViewController(readerVC)
+        
+        
+        let scienceVC = ScienceViewController()
+        scienceVC.title = "科技"
+        self.addChildViewController(societyVC)
         
         
         
@@ -107,11 +102,6 @@ extension MainViewController{
         
         
         let count = self.childViewControllers.count
-        
-        
-        if count < 1 {
-            return
-        }
         
         var btnX : CGFloat? = 0
         let btnY : CGFloat? = 0
@@ -172,17 +162,9 @@ extension MainViewController{
     func setUpScrollView()  {
         
         
-        
-        self.titileScrollView = UIScrollView(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.size.width, height: 50))
-        self.view.addSubview(self.titileScrollView)
-        
-        self.contentView = UIScrollView(frame: CGRect(x: 0, y: 50, width: UIScreen.main.bounds.size.width, height: UIScreen.main.bounds.size.height - 50))
-        self.view.addSubview(self.contentView)
-        
-        
         titileScrollView.showsHorizontalScrollIndicator = false
     
-       
+      contentView.contentSize = CGSize(width: CGFloat(self.childViewControllers.count) * CGFloat(UIScreen.main.bounds.width), height: 0)
         contentView.showsHorizontalScrollIndicator = false
         
         contentView.isPagingEnabled = true
